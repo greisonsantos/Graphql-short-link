@@ -41,3 +41,5 @@ Administração: http://localhost:8001
 ###  Executando o service
 
 $ yarn dev
+
+Acesso: http://localhost:4000
