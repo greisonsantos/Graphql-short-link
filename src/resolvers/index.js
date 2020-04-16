@@ -25,17 +25,17 @@ module.exports={
 
     //not send params short
       if(!short){
-          let short =  Math.random().toString(36).substring(7);
-          let url=  await Url.create({link,short})
-          let short_link= `${base_url}${url.short}`
-          return ({short_link, link,short})
+        let short =  Math.random().toString(36).substring(7);
+        let url=  await Url.create({link,short})
+        let short_link= `${base_url}${url.short}`
+
+        return ({short_link, link,short})
       }
      
       const is_short= await Url.find({short})
 
     // already exists short in data base
       if(is_short.length >0){
-
         let number =Math.floor(Math.random() * 999) + 100;
         let new_short= is_short[0].short+short+'-'+number
 
@@ -45,7 +45,6 @@ module.exports={
 
         return ({short_link, link,short})
       }else{
-
         let url = await Url.create({link,short})
         let short_link= `${base_url}${url.short}`
 
