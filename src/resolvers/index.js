@@ -14,9 +14,11 @@ module.exports={
       short_link:async(ctx,{short})=>{
 
         const url= await Url.find({short})
-         console.log(url[0]);
-
-        return  ({short_link:url[0].link})
+         
+        if( url.length===0){
+          return  
+        }
+          return  ({short_link:url[0].link})
       }
   },
   
