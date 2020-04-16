@@ -2,7 +2,8 @@
 
 ### Requisitos
 NodeJS LTS 
-Docker (opcional), Docker-composer
+
+Docker, Docker-Composer (opcional)
 
 ### Uso
 Clonar o repositório
@@ -10,6 +11,7 @@ Clonar o repositório
 $ git clone https://github.com/greisonsantos/Graphql-short-link.git
 
 cd [ProjectName]
+
 npm install ou yarn 
 
 
@@ -22,16 +24,20 @@ O arquivo docker-compose.yml já contém a imagens para sistemas de banco de dad
 
 $ docker-compose up -d, para rodar em modo daemon
 
+###  Banco de Dados:
+
+Usuário: root
+
+Senha: secret
+
 MongoDB
+
 Painel de Administração:
 
 Administração: http://localhost:8001
 
 
-###  Banco de Dados:
-Usuário: root
-Senha: secret
 
-###  Executando o services
+###  Executando o service
 
 yarn dev
