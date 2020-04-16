@@ -10,9 +10,9 @@ Clonar o repositório
 
 $ git clone https://github.com/greisonsantos/Graphql-short-link.git
 
-cd [ProjectName]
+$ cd [ProjectName]
 
-npm install ou yarn 
+$ npm install ou yarn 
 
 
 
@@ -26,11 +26,11 @@ $ docker-compose up -d, para rodar em modo daemon
 
 ###  Banco de Dados:
 
+MongoDB
+
 Usuário: root
 
 Senha: secret
-
-MongoDB
 
 Painel de Administração:
 
@@ -40,4 +40,4 @@ Administração: http://localhost:8001
 
 ###  Executando o service
 
-yarn dev
+$ yarn dev
