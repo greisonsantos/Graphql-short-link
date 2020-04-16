@@ -1,0 +1,22 @@
+
+type Url{
+ id: ID!
+ link: String!
+ short: String
+ short_link: String
+}
+
+type ShortLink{
+  short_link: String
+}
+
+type Query {
+   urls:[Url!]!
+   url(id:ID!): Url
+   short_link(short:String!): ShortLink
+}
+
+type Mutation {
+  createUrl(link: String!, short:String):Url!
+}
+
