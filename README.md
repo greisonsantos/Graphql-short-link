@@ -18,7 +18,7 @@ $ npm install ou yarn
 
 ### Executando o Docker via Compose
 
-O arquivo docker-compose.yml já contém a imagens para sistemas de banco de dados  MongoDB, com seu sistemas de administração.
+O arquivo docker-compose.yml já contém a imagens para sistemas de banco de dados  MongoDB, com seu sistema de administração.
 
 ### Para subir as imagens execute o comando no projeto:
 
