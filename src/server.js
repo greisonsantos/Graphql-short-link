@@ -20,6 +20,13 @@ const server = new GraphQLServer({
    resolvers,
 })
 
+
+// const options = {
+//   port: 8000,
+//   endpoint: '/graphql',
+//   subscriptions: '/subscriptions',
+//   playground: '/playground',
+// }
 server.use(morgan('tiny', { stream: accessLogStream }));
 
 
